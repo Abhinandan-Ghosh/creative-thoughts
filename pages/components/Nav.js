@@ -5,7 +5,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Nav = () => {
   const [user, loading] = useAuthState(auth);
-  console.log(user)
   return (
     <nav className='flex justify-between items-center py-10'>
       <Link href="/">
